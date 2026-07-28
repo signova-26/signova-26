@@ -1,0 +1,103 @@
+import React, { useState, useEffect } from 'react';
+import { Calendar } from 'lucide-react';
+
+const Hero = ({ onRegisterClick }) => {
+  // Target date: August 27, 2026 09:00:00
+  const [targetDate] = useState(new Date('2026-08-27T09:00:00').getTime());
+  
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+
+  const TimeBlock = ({ value, label }) => (
+    <div className="flex flex-col items-center mx-2 md:mx-4">
+      <div className="w-16 h-16 md:w-24 md:h-24 bg-gray-900/80 border border-cyan-400/30 flex items-center justify-center rounded-lg shadow-[0_0_15px_rgba(34,211,238,0.15)] mb-2">
+        <span className="font-mono text-3xl md:text-5xl font-bold text-cyan-400">
+          {value.toString().padStart(2, '0')}
+        </span>
+      </div>
+      <span className="font-mono text-xs md:text-sm text-gray-400 uppercase tracking-wider">{label}</span>
+    </div>
+  );
+
+  return (
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-grid-pattern">
+      {/* Glow overlays */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none"></div>
+      
+      <div className="relative z-10 text-center px-4 flex flex-col items-center">
+        <img src="/logo2.png" alt="SIGNOVA Logo" className="h-28 md:h-40 w-auto mb-2 drop-shadow-[0_0_25px_rgba(34,211,238,0.4)] animate-pulse" />
+        <p className="text-sm md:text-lg text-white mb-2 font-mono font-bold uppercase tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] md:whitespace-nowrap">
+          UNIVERSITY COLLEGE OF ENGINEERING (BIT CAMPUS) , TIRUCHIRAPPALLI - 24
+        </p>
+
+        <p className="text-xs md:text-base text-cyan-400 mb-2 font-mono uppercase tracking-[0.4em] ml-[0.4em]">
+          DEPARTMENT OF ECE & VLSI
+        </p>
+
+        <p className="text-[10px] md:text-xs text-gray-400 mb-4 font-mono tracking-widest italic lowercase">
+          proudly presents
+        </p>
+
+        <h1 className="text-5xl md:text-7xl lg:text-9xl font-mono font-bold text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500 leading-none drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] tracking-tighter relative z-10">
+          SIGNOVA'26
+        </h1>
+        
+        <p className="text-sm md:text-base text-gray-400 -mt-2 md:-mt-4 mb-4 font-mono tracking-widest italic lowercase relative z-20">
+          A Confluence of Talent and Technology
+        </p>
+
+        <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)] relative z-20">
+          <Calendar className="w-5 h-5 md:w-7 md:h-7 text-cyan-300" />
+          <h2 className="text-lg md:text-2xl mt-1 font-mono font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500">
+            August 27, 2026 <span className="text-gray-400 mx-1">|</span> 9:00 AM Onwards
+          </h2>
+        </div>
+
+        <div className="flex justify-center mb-6 md:mb-10">
+          <TimeBlock value={timeLeft.days} label="Days" />
+          <div className="text-4xl text-cyan-400/50 mt-4 md:mt-6 animate-pulse">:</div>
+          <TimeBlock value={timeLeft.hours} label="Hours" />
+          <div className="text-4xl text-cyan-400/50 mt-4 md:mt-6 animate-pulse">:</div>
+          <TimeBlock value={timeLeft.minutes} label="Mins" />
+          <div className="text-4xl text-cyan-400/50 mt-4 md:mt-6 animate-pulse">:</div>
+          <TimeBlock value={timeLeft.seconds} label="Secs" />
+        </div>
+
+        <button 
+          onClick={onRegisterClick}
+          className="btn-primary text-lg md:text-xl px-10 py-4 shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+        >
+          Register Now!
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

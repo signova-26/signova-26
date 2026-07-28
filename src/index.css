@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+@theme {
+  --color-background: #0A0A0A;
+  --font-sans: 'Inter', 'Roboto', sans-serif;
+  --font-mono: "Fira Code", "Share Tech Mono", monospace;
+  --animate-glow-pulse: glow-pulse 2s infinite;
+  --animate-border-pulse: border-pulse 2s infinite;
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.5)); }
+    50% { opacity: 0.8; filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.8)); }
+  }
+  
+  @keyframes border-pulse {
+    0%, 100% { border-color: rgba(34, 211, 238, 0.3); box-shadow: 0 0 10px rgba(34, 211, 238, 0.2); }
+    50% { border-color: rgba(34, 211, 238, 0.8); box-shadow: 0 0 20px rgba(34, 211, 238, 0.6); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-gray-100 font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-mono font-medium text-cyan-400 bg-transparent border border-cyan-400 rounded-md shadow-[0_0_15px_rgba(34,211,238,0.3)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)] hover:bg-cyan-400 hover:text-black transition-all duration-300 ease-in-out;
+  }
+  
+  .btn-secondary {
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-mono font-medium text-emerald-400 bg-transparent border border-emerald-400 rounded-md shadow-[0_0_15px_rgba(52,211,153,0.3)] hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] hover:bg-emerald-400 hover:text-black transition-all duration-300 ease-in-out;
+  }
+
+  .glass-card {
+    @apply bg-gray-900/40 backdrop-blur-md border border-gray-800 rounded-xl hover:border-cyan-400/50 transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full hover:bg-cyan-500 transition-colors;
+}
+
+/* Background grid pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
