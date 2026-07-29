@@ -11,7 +11,6 @@ const Events = ({ onRegisterClick }) => {
       desc: 'Innovate. Present. Inspire. Showcase your ideas and explore the power of technology through impactful Paper Presentation.',
       topics: [
         'Semiconductors & Nano Technologies', 
-        'Advanced Signal Processing', 
         'Communication & Networks', 
         'Robotics & Automation', 
         'Analog and Digital Electronics', 
@@ -19,7 +18,6 @@ const Events = ({ onRegisterClick }) => {
         'Biomedical Instrumentation', 
         'Embedded Systems and IoT', 
         'AI/ML', 
-        'Drone Technology', 
         'Own a Stage'
       ],
       details: {

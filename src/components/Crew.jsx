@@ -2,19 +2,19 @@ import React from 'react';
 
 const Crew = () => {
   const team = [
-    { name: 'Dr.P.Ramadevi', role: 'HOD (Dept of ECE)', img: 'https://unavatar.io/x/ramadevi' },
-    { name: 'Dr.M.Bhuvaneswari', role: 'Symposium Co-ordinator', img: 'https://unavatar.io/x/bhuvaneswari' },
-    { name: 'Mrs.R.Jayarani', role: 'Symposium Co-ordinator', img: 'https://unavatar.io/x/jayarani' },
-    { name: 'Hariharasudhan M', role: 'President', img: 'https://unavatar.io/x/hariharasudhan' },
-    { name: 'Krishnaraj', role: 'Vice President', img: 'https://unavatar.io/x/krishnaraj' },
-    { name: 'Tharis S', role: 'Secretary', img: 'https://unavatar.io/x/tharis' },
-    { name: 'Harini', role: 'Joint Secretary', img: 'https://unavatar.io/x/harini' },
-    { name: 'Divyalakshmani G', role: 'Students Co-ordinator', img: 'https://unavatar.io/x/divyalakshmani' },
-    { name: 'Naveen kumar', role: 'Overall co_ordinator', img: 'https://unavatar.io/x/naveen' },
-    { name: 'Praveen kumar R', role: 'Technical Head', img: 'https://unavatar.io/x/praveenkumar' },
-    { name: 'Nithish A', role: 'Non-Technical Head', img: 'https://unavatar.io/x/nithish' },
-    { name: 'Praveen R', role: 'Design Head', img: 'https://unavatar.io/x/praveen' },
-    { name: 'Abishek M', role: 'PR Head', img: 'https://unavatar.io/x/abishek' },
+    { name: 'Dr.P.Ramadevi', role: 'HOD (Dept of ECE)', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Dr.M.Bhuvaneswari', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Mrs.R.Jayarani', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Hariharasudhan M', role: 'President', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Krishnaraj', role: 'Vice President', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Tharis S', role: 'Secretary', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Harini', role: 'Joint Secretary', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Divyalakshmani G', role: 'Students Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Naveen kumar', role: 'Overall co_ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Praveen kumar R', role: 'Technical Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Nithish A', role: 'Non-Technical Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Praveen R', role: 'Design Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Abishek M', role: 'PR Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
   ];
 
   const row1 = team.slice(0, 3);
