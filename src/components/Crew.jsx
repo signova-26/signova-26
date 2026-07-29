@@ -14,7 +14,7 @@ const Crew = () => {
     { name: 'Praveen kumar R', role: 'Technical Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
     { name: 'Nithish A', role: 'Non-Technical Head', img: '/nithish.jpg' },
     { name: 'Praveen R', role: 'Design Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Abishek M', role: 'PR Head', img: '/abishek.jpeg' },
+    { name: 'Abishek M', role: 'PR Head', img: '/abishek.jpg' },
   ];
 
   const row1 = team.slice(0, 3);
