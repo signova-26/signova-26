@@ -61,6 +61,15 @@ const Contact = () => {
             </div>
 
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-3 hover:border-cyan-400/50 transition-colors">
+              <h4 className="text-white font-bold text-sm md:text-base mb-1">From TVS tolgate, Trichy</h4>
+              <p className="text-xs text-gray-300 mb-2">Board any bus heading towards Pudukottai, Keeranur. Buses are available frequently.</p>
+              <div className="flex items-start gap-2 text-cyan-400 bg-cyan-400/10 p-2 rounded border border-cyan-400/20">
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span className="text-xs">Get down at <strong>Anna University Bus Stop</strong></span>
+              </div>
+            </div>
+
+            <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-3 hover:border-cyan-400/50 transition-colors">
               <h4 className="text-white font-bold text-sm md:text-base mb-1">From Panjapur (KKBT), Trichy</h4>
               <p className="text-xs text-gray-300 mb-2">Board any bus heading towards Pudukottai. Buses are available frequently.</p>
               <div className="flex items-start gap-2 text-cyan-400 bg-cyan-400/10 p-2 rounded border border-cyan-400/20">
