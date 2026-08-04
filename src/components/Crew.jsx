@@ -5,7 +5,7 @@ const Crew = () => {
     { name: 'Dr.P.Ramadevi', role: 'HOD (Dept of ECE)', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
     { name: 'Dr.M.Bhuvaneswari', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
     { name: 'Mrs.R.Jayarani', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Hariharasudhan M', role: 'President', img: '/hariharasudhan.jpeg' },
+    { name: 'Hariharasudhan M', role: 'President', img: '/Hariharasudhan.jpeg' },
     { name: 'Krishnaraj', role: 'Vice President', img: '/krishnaraj.jpeg' },
     { name: 'Tharis S', role: 'Secretary', img: '/tharis.jpeg' },
     { name: 'Harini', role: 'Joint Secretary', img: '/Harini.jpeg' },
