@@ -16,7 +16,7 @@ export default {
       animation: {
         'glow-pulse': 'glow-pulse 2s infinite',
         'border-pulse': 'border-pulse 2s infinite',
-        'marquee': 'marquee 20s linear infinite',
+        'marquee': 'marquee 7s linear infinite',
       },
       keyframes: {
         'marquee': {

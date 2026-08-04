@@ -93,8 +93,8 @@ const Navbar = ({ onRegisterClick }) => {
       )}
 
       {/* Scrolling Announcement Banner */}
-      <div className="w-full bg-cyan-950/40 border-b border-gray-800 overflow-hidden py-1.5 flex items-center">
-        <p className="inline-block whitespace-nowrap animate-marquee text-cyan-300 font-mono text-xs md:text-sm font-semibold tracking-wider">
+      <div className="w-full bg-yellow-400 border-y border-yellow-500 overflow-hidden py-2 flex items-center shadow-md">
+        <p className="inline-block whitespace-nowrap animate-marquee text-red-600 font-mono text-sm md:text-base font-bold tracking-wider uppercase">
           Last Date for online registration is August 25, 2026. Spot Registration is also available.
         </p>
       </div>
