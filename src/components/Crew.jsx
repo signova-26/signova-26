@@ -10,7 +10,7 @@ const Crew = () => {
     { name: 'Tharis S', role: 'Secretary', img: '/tharis.jpeg' },
     { name: 'Harini', role: 'Joint Secretary', img: '/Harini.jpeg' },
     { name: 'Divyalakshmani G', role: 'Students Co-ordinator', img: '/Divyalakshmani G.jpeg' },
-    { name: 'Naveen Kumar', role: 'Overall Co-ordinator', img: '/Naveen kumar.jpeg' },
+    { name: 'Naveen Kumar K', role: 'Overall Co-ordinator', img: '/Naveen kumar.jpeg' },
     { name: 'Praveen kumar R', role: 'Technical Head', img: '/Praveen kumar R.jpeg' },
     { name: 'Nithish A', role: 'Non-Technical Head', img: '/nithish.jpg' },
     { name: 'Praveen R', role: 'Design Head', img: '/Praveen R.jpeg' },
