@@ -52,12 +52,12 @@ const Hero = ({ onRegisterClick }) => {
       
       <div className="relative z-10 text-center px-4 flex flex-col items-center">
         <img src="/logo2.png" alt="SIGNOVA Logo" className="h-28 md:h-40 w-auto mb-2 drop-shadow-[0_0_25px_rgba(34,211,238,0.4)] animate-pulse" />
-        <p className="text-sm md:text-lg text-white mb-2 font-mono font-bold uppercase tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] md:whitespace-nowrap">
-          UNIVERSITY COLLEGE OF ENGINEERING (BIT CAMPUS) , TIRUCHIRAPPALLI - 24
+        <p className="text-sm md:text-lg text-white mb-2 font-mono font-bold tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] md:whitespace-nowrap">
+          University College of Engineering (BIT campus), Anna University, Tiruchirappalli - 24.
         </p>
 
-        <p className="text-xs md:text-base text-cyan-400 mb-2 font-mono uppercase tracking-[0.4em] ml-[0.4em]">
-          DEPARTMENT OF ECE & VLSI
+        <p className="text-xs md:text-base text-cyan-400 mb-2 font-mono tracking-[0.2em] ml-[0.2em]">
+          Department of Electronics and Communication Engineering
         </p>
 
         <p className="text-[10px] md:text-xs text-gray-400 mb-4 font-mono tracking-widest italic lowercase">
