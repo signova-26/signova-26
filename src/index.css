@@ -7,6 +7,12 @@
   --font-mono: "Fira Code", "Share Tech Mono", monospace;
   --animate-glow-pulse: glow-pulse 2s infinite;
   --animate-border-pulse: border-pulse 2s infinite;
+  --animate-marquee: marquee 7s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+  }
 
   @keyframes glow-pulse {
     0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.5)); }
