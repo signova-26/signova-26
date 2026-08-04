@@ -15,17 +15,15 @@ const About = () => {
     },
     {
       icon: <CreditCard className="w-8 h-8 text-emerald-400" />,
-      title: "Registration",
+      title: "Special Team Offer",
       description: (
         <div className="text-sm mt-3 space-y-3 text-center">
           <div>
-            <span className="text-white font-bold block mb-1">Individual Registration</span>
-            <span className="text-gray-400">₹250 per participant</span>
+            <span className="text-emerald-400/80 text-xs font-semibold block mb-1">(4 Members only)</span>
+            <span className="text-emerald-400 font-bold block text-lg">₹750/- only (3 + 1 Free)</span>
           </div>
           <div className="pt-3 border-t border-gray-800/80">
-            <span className="text-emerald-400 font-bold block">Special Team Offer</span>
-            <span className="text-emerald-400/80 text-xs font-semibold block mb-1">(4 Members only)</span>
-            <span className="text-gray-400">₹750 only (3 + 1 Free)</span>
+            <span className="text-gray-400 font-medium">Individual : ₹250/-</span>
           </div>
         </div>
       )
