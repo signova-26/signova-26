@@ -45,14 +45,14 @@ const Hero = ({ onRegisterClick }) => {
   );
 
   return (
-    <section id="home" className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center pt-28 pb-16 md:pt-16 md:pb-0 overflow-hidden bg-grid-pattern">
+    <section id="home" className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center pt-36 pb-16 md:pt-24 md:pb-0 overflow-hidden bg-grid-pattern">
       {/* Glow overlays */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none"></div>
       
       <div className="relative z-10 text-center px-4 flex flex-col items-center">
-        <img src="/logo2.png" alt="SIGNOVA Logo" className="h-28 md:h-40 w-auto mb-2 drop-shadow-[0_0_25px_rgba(34,211,238,0.4)] animate-pulse" />
-        <p className="text-sm md:text-lg text-white mb-2 font-mono font-bold tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] md:whitespace-nowrap">
+        <img src="/logo2.png" alt="SIGNOVA Logo" className="h-28 md:h-40 w-auto mb-3 md:mb-4 drop-shadow-[0_0_25px_rgba(34,211,238,0.4)] animate-pulse" />
+        <p className="text-xs sm:text-sm md:text-lg text-white mb-2 font-mono font-bold tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] md:whitespace-nowrap">
           University College of Engineering (BIT campus), Anna University, Tiruchirappalli - 24.
         </p>
 
@@ -72,10 +72,16 @@ const Hero = ({ onRegisterClick }) => {
           A Confluence of Talent and Technology
         </p>
 
-        <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)] relative z-20">
-          <Calendar className="w-5 h-5 md:w-7 md:h-7 text-cyan-300" />
-          <h2 className="text-lg md:text-2xl mt-1 font-mono font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500">
-            August 27, 2026 <span className="text-gray-400 mx-1">|</span> 9:00 AM Onwards
+        <div className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-3 mb-6 md:mb-8 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)] relative z-20 mt-2">
+          <div className="flex items-center gap-2">
+            <Calendar className="w-5 h-5 md:w-7 md:h-7 text-cyan-300" />
+            <h2 className="text-sm sm:text-base md:text-2xl mt-1 font-mono font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500">
+              August 27, 2026
+            </h2>
+          </div>
+          <span className="hidden md:inline text-gray-400 mx-1 text-2xl">|</span>
+          <h2 className="text-sm sm:text-base md:text-2xl font-mono font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500">
+            9:00 AM Onwards
           </h2>
         </div>
 
