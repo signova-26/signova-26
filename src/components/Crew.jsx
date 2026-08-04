@@ -6,15 +6,15 @@ const Crew = () => {
     { name: 'Dr.M.Bhuvaneswari', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
     { name: 'Mrs.R.Jayarani', role: 'Symposium Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
     { name: 'Hariharasudhan M', role: 'President', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Krishnaraj', role: 'Vice President', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Tharis S', role: 'Secretary', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Harini', role: 'Joint Secretary', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Divyalakshmani G', role: 'Students Co-ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Naveen kumar', role: 'Overall co_ordinator', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Praveen kumar R', role: 'Technical Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Krishnaraj', role: 'Vice President', img: '/krishnaraj.jpeg' },
+    { name: 'Tharis S', role: 'Secretary', img: '/tharis.jpeg' },
+    { name: 'Harini', role: 'Joint Secretary', img: '/Harini.jpeg' },
+    { name: 'Divyalakshmani G', role: 'Students Co-ordinator', img: '/Divyalakshmani G.jpeg' },
+    { name: 'Naveen kumar', role: 'Overall co_ordinator', img: '/Naveen kumar.jpeg' },
+    { name: 'Praveen kumar R', role: 'Technical Head', img: '/Praveen kumar R.jpeg' },
     { name: 'Nithish A', role: 'Non-Technical Head', img: '/nithish.jpg' },
-    { name: 'Praveen R', role: 'Design Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
-    { name: 'Abishek M', role: 'PR Head', img: 'https://www.gravatar.com/avatar/0?d=mp&f=y' },
+    { name: 'Praveen R', role: 'Design Head', img: '/Praveen R.jpeg' },
+    { name: 'Abishek M', role: 'PR Head', img: '/abishek.png' },
   ];
 
   const row1 = team.slice(0, 3);
