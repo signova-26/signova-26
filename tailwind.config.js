@@ -20,8 +20,8 @@ export default {
       },
       keyframes: {
         'marquee': {
-          '0%': { transform: 'translateX(100vw)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100vw)' },
         },
         'glow-pulse': {
           '0%, 100%': { opacity: 1, filter: 'drop-shadow(0 0 10px rgba(34, 211, 238, 0.5))' },
