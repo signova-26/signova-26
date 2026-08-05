@@ -28,7 +28,7 @@ const Crew = () => {
         <img 
           src={member.img} 
           alt={member.name}
-          className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-gray-700 group-hover:border-cyan-400 transition-colors duration-300 filter grayscale group-hover:grayscale-0"
+          className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-gray-700 group-hover:border-cyan-400 transition-colors duration-300"
           onError={(e) => {
             e.target.src = `https://ui-avatars.com/api/?name=${member.name}&background=0D8B9&color=fff`;
           }}
