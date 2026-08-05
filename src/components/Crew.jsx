@@ -24,17 +24,17 @@ const Crew = () => {
   const MemberCard = ({ member }) => (
     <div className="flex flex-col items-center group w-32 sm:w-36 md:w-44 lg:w-48">
       <div className="relative mb-2 md:mb-3">
-        <div className="absolute inset-0 bg-cyan-400 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-cyan-400 rounded-full blur-md opacity-40 transition-opacity duration-300"></div>
         <img 
           src={member.img} 
           alt={member.name}
-          className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-gray-700 group-hover:border-cyan-400 transition-colors duration-300"
+          className="relative w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-cyan-400 transition-colors duration-300"
           onError={(e) => {
             e.target.src = `https://ui-avatars.com/api/?name=${member.name}&background=0D8B9&color=fff`;
           }}
         />
       </div>
-      <h3 className="font-mono font-bold text-white text-sm md:text-lg text-center group-hover:text-cyan-400 transition-colors leading-tight mb-1">{member.name}</h3>
+      <h3 className="font-mono font-bold text-cyan-400 text-sm md:text-lg text-center transition-colors leading-tight mb-1">{member.name}</h3>
       <p className="text-gray-400 text-xs md:text-sm font-mono text-center leading-tight">{member.role}</p>
     </div>
   );
