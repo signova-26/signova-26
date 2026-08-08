@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Users, Trophy, CreditCard } from 'lucide-react';
+import { Cpu, Users, Trophy, CreditCard, Banknote } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -29,8 +29,13 @@ const About = () => {
       )
     },
     {
-      icon: <Trophy className="w-8 h-8 text-blue-400" />,
-      title: <span className="text-blue-400 font-extrabold text-2xl drop-shadow-[0_0_10px_rgba(96,165,250,0.5)]">Prizes Worth ₹15000</span>,
+      icon: (
+        <div className="flex gap-2">
+          <Trophy className="w-8 h-8 text-blue-400" />
+          <Banknote className="w-8 h-8 text-emerald-400" />
+        </div>
+      ),
+      title: <span className="text-blue-400 font-extrabold text-2xl drop-shadow-[0_0_10px_rgba(96,165,250,0.5)]">Cash Prizes Worth <br/>₹15000</span>,
       description: "Compete and win exciting cash prizes, certificates, and recognition."
     }
   ];
