@@ -65,7 +65,7 @@ const Events = ({ onRegisterClick }) => {
       desc: 'A fun filled event where teams of two compete in four rounds by guessing movies from dialogues, spotting films by actors and costumes, identifying movies from background scenes, and recalling character names with no eliminations, and the duo with the highest score out of 100 wins.',
       details: {
         mode: 'Team (2 per team)',
-        rounds: '2',
+        rounds: '4',
         type: 'Mixed with dialogues, images, scenes, and character recognition.'
       }
     },
@@ -76,7 +76,7 @@ const Events = ({ onRegisterClick }) => {
       details: {
         mode: 'Individual',
         rounds: '1',
-        type: 'Quiz'
+        type: 'Rapid Fire Quiz'
       }
     }
   ];
