@@ -60,8 +60,12 @@ const Hero = ({ onRegisterClick }) => {
           Department of Electronics and Communication Engineering
         </p>
 
-        <p className="text-[10px] md:text-xs text-gray-400 mb-4 font-mono tracking-widest italic lowercase">
+        <p className="text-[10px] md:text-xs text-gray-400 mb-2 font-mono tracking-widest italic lowercase">
           proudly presents
+        </p>
+
+        <p className="text-sm md:text-lg text-emerald-400 mb-2 md:mb-4 font-mono font-bold tracking-widest uppercase relative z-20 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]">
+          A National Level Technical Symposium
         </p>
 
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-mono font-bold text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-500 leading-none drop-shadow-[0_0_20px_rgba(34,211,238,0.5)] tracking-tighter relative z-10">
