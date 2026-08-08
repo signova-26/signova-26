@@ -64,7 +64,7 @@ const Hero = ({ onRegisterClick }) => {
           proudly presents
         </p>
 
-        <p className="text-xs md:text-base text-emerald-400 mb-1 md:mb-2 font-mono font-bold tracking-widest uppercase relative z-20 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]">
+        <p className="text-xs md:text-sm text-gray-400 mb-1 md:mb-2 font-mono tracking-widest italic lowercase relative z-20">
           A National Level Technical Symposium
         </p>
 
