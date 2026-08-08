@@ -36,9 +36,9 @@ const Timeline = () => {
   const schedule = [
     { time: '09:00 AM', title: 'Spot Registration & Kit Distribution', desc: 'Arrive early to collect your symposium kit and ID card.' },
     { time: '10:00 AM', title: 'Inauguration Ceremony', desc: 'Official kick-off by the Head of Department and Chief Guest.' },
-    { time: '11:00 AM', title: 'Technical Events Commence', desc: 'Paper presentation, Bid & Build, and Mystery event start simultaneously.' },
+    { time: '11:00 AM', title: 'Technical Events Commence', desc: 'Paper Verse, Bid & Build and PixelVerse start simultaneously.' },
     { time: '01:00 PM', title: 'Lunch Break', desc: 'Recharge and network.' },
-    { time: '02:00 PM', title: 'Non-Technical Events', desc: 'Rapid fire, Guess the component, and Crack the circuit begin.' },
+    { time: '02:00 PM', title: 'Non-Technical Events', desc: 'Movie Mania, Stranger Things and MindSprint begin.' },
     { time: '05:00 PM', title: 'Valedictory & Prize Distribution', desc: 'Honoring the winners and closing remarks.' }
   ];
 
