@@ -22,7 +22,8 @@ const Events = ({ onRegisterClick }) => {
       ],
       details: {
         mode: 'Individual or Team (2-3 per team)',
-        rounds: '1'
+        rounds: '1',
+        duration: '7mins'
       }
     },
     {
@@ -113,6 +114,7 @@ const Events = ({ onRegisterClick }) => {
         <div className="mt-auto space-y-1 text-[11px] md:text-xs font-mono text-gray-300 bg-gray-900/50 p-2 md:p-3 rounded border border-gray-800">
           {event.details.mode && <p><span className={`${isTech ? 'text-cyan-400' : 'text-emerald-400'} font-bold uppercase`}>Mode:</span> {event.details.mode}</p>}
           {event.details.rounds && <p><span className={`${isTech ? 'text-cyan-400' : 'text-emerald-400'} font-bold uppercase`}>Rounds:</span> {event.details.rounds}</p>}
+          {event.details.duration && <p><span className={`${isTech ? 'text-cyan-400' : 'text-emerald-400'} font-bold uppercase`}>Duration:</span> {event.details.duration}</p>}
           {event.details.type && <p><span className={`${isTech ? 'text-cyan-400' : 'text-emerald-400'} font-bold uppercase`}>Type:</span> <span className="inline-block leading-tight">{event.details.type}</span></p>}
         </div>
       )}
