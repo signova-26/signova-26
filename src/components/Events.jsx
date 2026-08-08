@@ -41,8 +41,8 @@ const Events = ({ onRegisterClick }) => {
       icon: <Lightbulb className="w-8 h-8 text-cyan-400" />,
       desc: 'This event tests how well participants can communicate with AI by crafting creative prompts, optimizing them, and using Google Gemini to generate images from text or reference pictures.',
       details: {
-        mode: 'Individual',
-        rounds: '3',
+        mode: 'Team (2-4 members)',
+        rounds: '2',
         type: 'Prompt enhancement, Image recreation & Advanced prompt Engineering'
       }
     }
